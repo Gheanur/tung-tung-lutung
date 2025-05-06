@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->text('description');
+            $table->string('nama-barang');
+            $table->('jumlah');
+            $table->string('keadaan');
             $table->string('image'); // path file gambar
             $table->timestamps();
         });
