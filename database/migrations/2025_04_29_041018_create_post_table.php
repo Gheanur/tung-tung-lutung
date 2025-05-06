@@ -13,10 +13,9 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('nama-barang');
-            $table->('jumlah');
+            $table->string('nama_barang');
+            $table->integer('jumlah');
             $table->string('keadaan');
-            $table->string('image'); // path file gambar
             $table->timestamps();
         });
     }

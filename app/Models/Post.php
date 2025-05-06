@@ -14,9 +14,9 @@ class Post extends Model
 
     // Field yang bisa diisi (sesuai form kamu)
     protected $fillable = [
-        'title',
-        'description',
-        'image',
+        'nama_barang',
+        'jumlah',
+        'keadaan',
     ];
 
     public function comments()
