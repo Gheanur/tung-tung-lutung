@@ -20,7 +20,7 @@
             <tbody>
                 @foreach ($posts as $post)
                 <tr>
-                    <td>{{ $post->id }}</td>
+                    <td>{{ $loop->iteration }}</td>
                     <td>{{ $post->nama_barang }}</td>
                     <td>{{ $post->jumlah }}</td>
                     <td>{{ $post->keadaan }}</td>

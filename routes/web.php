@@ -4,12 +4,12 @@ use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Post;
 use Illuminate\Support\Facades\Auth;
+use App\Providers\RouteServiceProvider;
 
 // Home (beranda)
 Route::get('/', function () {
-    $posts = Post::with('user')->latest()->get();
-    return view('home', compact('posts'));
-})->name('home');
+    return view('welcome');
+})->name('welcome');
 
 // Profile (profil user)
 Route::get('/profile', function () {
