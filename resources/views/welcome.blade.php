@@ -1,8 +1,4 @@
 @extends("layouts.app")
 
-@section("content")
-    <div class="card">
+@section('title', 'Welcome Inventaris Pusat')
 
-        <img class="card-img-top" src="" alt="" srcset="">
-    </div>
-@endsection
