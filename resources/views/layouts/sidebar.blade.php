@@ -7,7 +7,7 @@
     </a>
 
     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createPostModal">
-        Create New Post
+        Tambah Barang
       </button>
 
     <a href="{{ route('profile') }}" class="btn btn-success text-black text-decoration-none mb-3 {{ request()->routeIs('profile') ? 'fw-bold' : '' }}">
